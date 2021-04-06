@@ -1,0 +1,98 @@
+Instruction If/Else
+
+L'instruction   if  /  else  est une des plus universelles en programmation. 
+Qu'il s'agisse de réagir à une saisie de l'utilisateur,
+ aux résultats de calculs ou de simplement vérifier si quelqu'un est connecté ou non,
+  vous aurez souvent à utiliser des instructions if/else.
+
+IF (SI) l'utilisateur est connecté, ouvrir sa page d'accueil)
+
+ELSE (SINON) revenir à la page de connexion)
+
+C'est ce qu'on appelle une instruction conditionnelle,
+ parce qu'elle vérifie si certaines conditions sont réunies, 
+ et réagit en conséquence. Voyons les types de conditions 
+ qui peuvent être utilisés dans ces instructions.
+
+ En JavaScript, si on utilise 
+ des   boolean  simples 
+ pour les instructions   if  /  else  ,
+  la syntaxe se présente comme suit :
+//
+
+
+if (myBoolean) {
+                    // réaction à la valeur vraie de myBoolean
+
+                }
+
+ else {
+
+ 
+
+         // réaction à la valeur faux de myBoolean
+
+ 
+
+    };
+//
+
+Plutôt qu'une simple variable logique dans une condition   if  /  else  , vous pouvez aussi utiliser des expressions de comparaison, qui comparent des valeurs entre elles.
+
+Les expressions de comparaison vous permettent de comparer deux valeurs par les opérateurs suivants :
+
+<   inférieur à ;
+
+<=   inférieur ou égal à ;
+
+==   égal à ;
+
+>=   supérieur ou égal à ;
+
+>   supérieur à ;
+
+!=   différent de.
+
+En JavaScript, toutes les égalités ne sont pas nées égales :
+
+Il y a deux façons de vérifier si deux valeurs sont égales en JavaScript :  ==  et  ===, aussi appelées égalité simple et égalité stricte :
+
+l'égalité simple vérifie la valeur, mais pas le type. Donc ceci renvoie la valeur true  :
+5 == "5"
+
+par contre, l'égalité stricte vérifie à la fois la valeur et le type. Donc :
+5 === "5"
+renvoie   false  , car on compare un   number  à une   string  .
+
+De même, il y a deux opérateurs d'inégalité,   !=  et   !==  , avec la même distinction.
+
+
+Comprenez les conditions multiples
+Dans certaines situations, vous souhaitez vérifier plusieurs conditions pour un même résultat ; par exemple dans la même instruction if. Pour cela, il existe des opérateurs logiques :
+
+&&  – ET logique – pour vérifier si deux conditions sont toutes les deux vraies ;
+
+||    – OU logique – pour vérifier si au moins une condition est vraie ;
+
+!    – NON logique – pour vérifier si une condition n'est pas vraie. 
+
+Appréhendez une notion importante : le scope des variables
+En JavaScript, les variables créées par   let  ou   const  ne peuvent être vues ou utilisées qu'à l'intérieur du bloc de code dans lequel elles sont déclarées.
+
+
+LES BOUCLES FOR ET WHILE
+
+const NameConst = 10;
+
+ 
+
+for (let i = 0; i < NameConst; i++) {
+
+ 
+
+   console.log("NameConst=10 !");
+
+ 
+
+}
+
