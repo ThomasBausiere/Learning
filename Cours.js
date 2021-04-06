@@ -56,7 +56,8 @@
 
 // Le comptage d'éléments
 // La propriété   length  d'un tableau indique le nombre d'éléments qu'il contient
-
+// let guests = ["Will Alexander", "Sarah Kate", "Audrey Simon"];
+// let howManyGuests = guests.length; // 3
 
 // L'ajout et la suppression d'éléments
 // Pour ajouter un élément à la fin d'un tableau, utilisez sa méthode push :
