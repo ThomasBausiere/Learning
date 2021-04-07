@@ -1,0 +1,169 @@
+Les Fonctions.
+
+1.A.Découvrez les fonctions.
+
+ Une fonction est un bloc de code auquel vous attribuez un nom. Quand vous appelez cette
+fonction, vous exécutez le code qu'elle contient.
+Il existe des fonctions natives mais vous pouvez créer n’importe quelle fonction vous même.
+
+1.B.Approfondissement de la fonction.
+ 
+ Beaucoup de fonctions ont besoin de variables pour effectuer leur travail.
+
+Quand vous créez ou déclarez une fonction, vous indiquez la liste des variables
+dont elle a besoin pour effectuer son travail: on parle de "paramètres de la fonction".
+ 
+À l'appel de la fonction, vous lui attribuez des valeurs pour ses paramètres. Les valeurs 
+sont "les arguments d'appel".
+ 
+Enfin, votre fonction peut vous donner un résultat : "une valeur de retour".
+
+
+
+
+2.Methodes d'instance et Methodes statiques.
+
+
+2.A.Découvrez les méthodes d'instance.
+
+  Une méthode d'instance est une fonction faisant partie d'une classe, et qui agit sur une
+instance de cette classe. 
+Maintenant que vous avez commencé à découvrir les fonctions, vous pouvez ajouter des méthodes
+d'instance à ces classes, pour augmenter leur puissance et leur utilité.
+
+
+
+2.B.Découvrez les méthodes statiques.
+
+  Il existe un type spécial de méthode pouvant être ajoutée à une classe : la méthode statique.
+Elle est différente des méthodes d'instance parce qu'elle n'est pas liée à une instance 
+particulière d'une classe, mais à la classe elle-même. Utilisez-la pour créer des méthodes
+utilitaires (helper en anglais) où vous n'aurez pas besoin d'une instance d'une classe pour
+les utiliser. Vous pourrez vous en servir comme boîte à outils de fonctions que vous 
+utiliserez souvent.
+
+3.Maintenir des fonctions proprement écrites.
+
+Proverbe de développeur:
+"Codez toujours comme si la personne qui devra maintenir ce code était un psychopathe violent 
+sachant où vous vivez."
+
+3.A.Quand et comment faire une fonction?
+ 
+ -Si vous vous trouvez à écrire plusieurs fois le même code, vous devriez probablement le 
+refactoriser dans une fonction.
+ -Choisissez judicieusement le nom de votre fonction. Le mieux étant que son nom décrive ce
+qu'elle fait.
+ -Respectez la meme Nomenclature tout le long de votre code.
+ -Conservez la même indentation.
+ -Placez les accolades et parenthèses de la même façon dans votre code.
+
+
+3.B.Techniques pour garder son code lisible :
+
+ -Méthode DRY – Don't Repeat Yourself  – 
+C'est le principe de programmation qui sugère de réduire au minimum la répétition dans le code.
+
+ -1 fonction = 1 action. 
+
+ -"La première règle des fonctions est qu'elles devraient être petites. La deuxième règle des
+fonctions est qu'elles devraient être encore plus petites." – Robert C. Martin
+
+ -Laissez des commentaires:  Les commentaires doivent clarifier ce qui n'est pas immédiatement
+apparent à la lecture du code.
+
+3.C. Écrire avec style.
+
+  Adopter un style cohérent est nécessaire pour que le code reste propre, et bien qu'il n'y ait
+pas de bonne façon absolue de faire les choses, il y a un certain nombre de conventions qui 
+peuvent faciliter la vie.
+
+ -Utiliser la convention de nommage.
+Les noms de variable et de fonction dans JavaScript sont généralement écrits en "camel case"
+minuscule (ex: numberOfCats).
+Les noms de classe sont écrits en "camel case" majuscule (ex: PremiumAccount).
+
+ -Des noms clairs et descriptifs pour les variables et les fonctions sont plus faciles à lire
+que des noms raccourcis, obscurs ou aléatoires.
+
+ -Mettre en forme son code.
+Il existe bien des domaines de "mise en forme de code". En voici quelques exemples:
+  -mise en retrait avec tabulation ou espace,
+  -espacement entre les lignes,
+  -Positionnement des accolades.
+Qu'importe le style que vous choisissez, tenez vous en pour garder vos code propre.
+
+
+4.Testez qu'une fonction fonctionne.
+
+ Il existe trois types essentiels de test.
+
+4.A.Tests unitaires.
+ 
+  Le test unitaire vérifie des unités individuelles (en général des fonctions uniques ou des
+classes) en leur fournissant une entrée et en s'assurant qu'elles donnent la sortie attendue.
+  En général, chaque unité est testée sur un cas simple, puis sur un ou plusieurs cas limites.
+  Les tests unitaires constituent généralement entre 60 et 80 % de l'ensemble des tests des 
+projets JavaScript.
+
+
+4.B.Tests d'intégration.
+
+  Les tests d'intégration vérifient les multiples fonctions ou classes pour s'assurer qu'elles
+travaillent ensemble comme elles sont censées le faire.
+  
+4.C.Tests fonctionnels.
+  
+  Les tests fonctionnels, aussi appelés de bout en bout (E2E), vérifient des scénarios 
+complets en contexte. Par exemple, un utilisateur se connecte à votre application, ouvre ses
+notifications et les marque toutes comme lues. Ces tests vérifient aussi les ressources 
+externes que votre projet peut utiliser, par exemple un système de paiement tiers.
+  Pratiquer les tests unitaires demande un peu d'expérience et d’utiliser des outils dédiés.
+Il existe différents frameworks dédiés aux tests unitaires et fonctionnels pour les 
+applications JavaScript frontend  et/ou backend. On retrouve souvent les frameworks Jasmine,
+mocha.js, Mocha, etc.
+
+
+5.Le deboguage.
+
+  Lorsque les applications ralentissent ou crash totalement, ou lorsque certaines choses 
+étranges apparaissent, c'est le signe d'un bug. C'est une partie intégrante de la vie de l'app.
+Le rôle du developpeur est d'en trouver les raisons et de les corriger.
+
+5.A.Afficher la console.
+
+  L'utilisation de la console convient bien dans les cas simples et isolés mais dans les 
+projets plus complexes, ce serait beaucoup plus difficile et plus chronophage. Dans ce cas, il
+faudra des armes plus puissantes.
+
+5.B.Les outils des Devs
+
+ -Le Breakpoint
+  Pour écrire du JavaScript pour des sites web, vous pouvez utiliser les outils pour 
+développeur intégrés dans les quatre navigateurs essentiels : Chrome, Firefox, Safari et Edge.
+Chaque navigateur contient un système qui vous permet d'ajouter des points d'arrêt pas-à-pas 
+(breakpoints) à votre code. Quand le navigateur arrive sur un point d'arrêt de votre code, il 
+met l'exécution en pause, ce qui vous permet de parcourir l'exécution ligne après ligne, en 
+vérifiant les valeurs des variables à chaque étape. Vous pouvez même ignorer certains morceaux 
+de code si vous souhaitez voir comment votre appli y réagit.
+
+ -les IDE.
+La plupart des environnements de développement intégrés comportent aussi un débogueur, qui 
+vous permet de tout déboguer dans votre espace de travail. Cela peut être pratique, en 
+particulier si votre code ne doit pas s'exécuter sur une page web et ne peut pas être vérifié 
+dans le navigateur. (ex: Visual Studio Code)
+
+5.C.Methode du canard en plastique.(méthode ultime à n'utiliser qu'en dernières instances!!)
+
+  Quand votre code a un bug que vous ne pouvez pas trouver et expliquer, vous pouvez parler à 
+un canard en plastique que vous conservez sur votre bureau. Vous expliquez votre code ligne par
+ligne en termes simples, que le canard peut comprendre. La réflexion à voix haute et 
+l'explication de votre code en termes simples vous permettra souvent de voir finalement : 
+"Comment n'ai-je pas vu ça ? Il y a un bug !".
+
+6.La Récursivité
+
+  Fonction qui s'appelle elle-même jusqu'à atteindre son objectif.
+  Une fonction récursive a besoin d'un cas de base, ou base case, pour qu'elle puisse savoir 
+quand son travail est terminé 
+  
